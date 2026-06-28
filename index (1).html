@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Pharmacy AI Assistant</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./1.png");
+            background-size: contain;
+            background-position: top center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        /* Tablet styles */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        /* Desktop styles */
+        @media (min-width: 901px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+            z-index: 1000;
+        }
+
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .whatsapp-float img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Smaller on mobile */
+        @media (max-width: 600px) {
+            .whatsapp-float img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Content goes here -->
+</div>
+
+<!-- WhatsApp Button -->
+<div class="whatsapp-float">
+    <a href="https://wa.me/442038083315" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+    </a>
+</div>
+
+<!-- Genesys Cloud Widget -->
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: '529b3996-92cd-4b83-a3b9-a995ad3e01bd'
+  });
+</script>
+
+</body>
+</html>
+
